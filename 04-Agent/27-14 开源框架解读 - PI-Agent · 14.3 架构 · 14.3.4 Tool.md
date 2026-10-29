@@ -31,7 +31,7 @@ Pi 是 TypeScript monorepo，主要由 4 个 package 组成：
 
 Pi 选择"小内核加扩展"，Claude Code 选择"默认带齐常用功能"。这个差异会影响工具数量、权限模型、提示词长度、扩展方式和会话结构。下面按维度对比，每条都先说 Pi、再说 Claude Code：
 
-![image.png](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/preview/UUyCbXrdSojMdKxyL8Qcb1qfnlb)
+![image.png](../assets/feishu/UUyCbXrdSojMdKxyL8Qcb1qfnlb.png)
 
 #### **14.1.3 为什么 Pi 适合学习**
 
@@ -74,7 +74,7 @@ coding-agent ─┬─→ agent ─→ ai
 
 `coding-agent` 同时依赖 `agent` 和 `tui`；`agent` 再依赖 `ai`；而 `ai` 和 `tui` 是两个"叶子"——除了各自的外部 SDK，它们不依赖任何内部包，也都不知道 agent 的存在。
 
-![image.png](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/preview/Sppdb7GkJobn8lxVVSqccdhjnCc)
+![image.png](../assets/feishu/Sppdb7GkJobn8lxVVSqccdhjnCc.png)
 
 ---
 
@@ -106,7 +106,7 @@ coding-agent ─┬─→ agent ─→ ai
 
 顺带说一句它为什么能这么拆：中枢那套东西（loop、context、session、compaction）不碰终端，所以同一套内核既能驱动这里的 TUI，也能被 RPC 或管道调用——这一点 3.7 讲三种运行模式时还会再碰到。
 
-![image.png](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/preview/E2CnbNZyro1qqmxnKEfczooVnbh)
+![image.png](../assets/feishu/E2CnbNZyro1qqmxnKEfczooVnbh.png)
 
 ---
 
@@ -123,7 +123,7 @@ Agent loop 是 Pi 最核心的部分。每次你向 Pi 发送消息，背后都�
 
 这个就是一个非常标准的流程了，ClaudeCode,Hermes都采用了他。这个循环也可以理解成是一个标准的React循环。 面试官也问过原题：工业上一个React是怎么做的？**就是上面的内容，请牢记。**
 
-![image.png](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/preview/WXChbH6mloPiWkx8pbgcSKIInTf)
+![image.png](../assets/feishu/WXChbH6mloPiWkx8pbgcSKIInTf.png)
 
 > 源码入口：`packages/agent/src/agent-loop.ts` 的 `runLoop()`、`streamAssistantResponse()`、`executeToolCalls()`。
 >

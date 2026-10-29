@@ -75,7 +75,7 @@ https://www.bilibili.com/video/BV1eP411w7Re/?spm_id_from=333.337.search-card.all
 
       
 
-![image.png](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/preview/IbIvbYIkUobSFbxHGdmcZ33vnme)
+![image.png](../assets/feishu/IbIvbYIkUobSFbxHGdmcZ33vnme.png)
 
  
 
@@ -91,7 +91,7 @@ https://www.bilibili.com/video/BV1eP411w7Re/?spm_id_from=333.337.search-card.all
 
 3. 基础不好的，学起来吃力的，可以学慢一点，或者反复两遍。跟着AI多找一下其它的资料，视频去理解，多提问。要是真的能掌握这个课程的内容，那就是入门了深度学习和Pytorch，这是算法必经之路，也没有那么容易。相较而言，这套路线其实已经是快速入门，面向着找工作为目标的精简版本了。
 
-![image.png](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/preview/FZj3bD35EoerTCxIeJ3cN2Gyn6d)
+![image.png](../assets/feishu/FZj3bD35EoerTCxIeJ3cN2Gyn6d.png)
 
 ### 2.1 视频讲解
 

@@ -68,7 +68,7 @@ Agent 的主要价值来自调用搜索、数据库、代码执行、支付、�
 
 #### 17.2.5 完整处理流程
 
-![image.png](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/preview/DnxUbJTOjoxy4jxWQS0cdInkngh)
+![image.png](../assets/feishu/DnxUbJTOjoxy4jxWQS0cdInkngh.png)
 
 上面的四条可以统一成一套完整的工具调用失败处理流程。按照这个思路回答，既能体现清晰的故障分类能力，也能体现对重试、熔断和优雅降级等高可用设计的理解。这套方案也可以直接用于实际项目中的 Agent 工具调用层设计。
 
@@ -153,7 +153,7 @@ Agent 的主要价值来自调用搜索、数据库、代码执行、支付、�
 
 #### 18.3.5 完整流程
 
-![image.png](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/preview/WvDMb1Qj0of4jTxDxJ6cMHUTndg)
+![image.png](../assets/feishu/WvDMb1Qj0of4jTxDxJ6cMHUTndg.png)
 
 上面的四条可以统一成一套完整的模型服务故障处理流程。与工具故障类似，它同样需要完成故障识别、局部恢复、故障切换和优雅降级；但模型服务多了一项关键判断： **接口恢复之后，还必须验证模型能力是否恢复。**
 

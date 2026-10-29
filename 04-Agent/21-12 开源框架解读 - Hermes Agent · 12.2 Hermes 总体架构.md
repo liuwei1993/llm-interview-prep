@@ -7,6 +7,15 @@
 
 ## 12 开源框架解读 - Hermes Agent
 
+**📝 2026年10月补充更正｜当前学习建议**
+
+根据目前求职市场的面试反馈，OpenClaw 和 Hermes Agent 的考察已比较少；Claude Code 仍会被问到，Pi-Agent 的热度和考察频率有所上升。DeepSeek Harness 和 Codex 作为近期开放源码的架构，也同样值得关注。
+
+因此，建议优先学习 Claude Code、Pi-Agent、DeepSeek Harness 和 Codex，有余力或感兴趣时，再学习本章节。正文中早期关于“必考”“必须掌握”等表述，请结合当时的撰写时间理解，当前学习优先级以本声明为参考。
+
+下方为早期撰写的原文，保留供学习参考。其中“必考”“必须掌握”等判断反映的是当时的情况，当前学习优先级请以上述更正为准。
+
+
 （写于 2026 年 4 月份底）如果说 2025 年的风向标是 Manus，2026 年初是 OpenClaw，那么 2026 年春天以来最火的 Agent 就是 **Hermes Agent**——它在 OpenRouter 上已经是 top trending coding agent，仅次于 OpenClaw。站在面试角度，Hermes 已经是必须掌握的第二个Agent 爆品：它和 OpenClaw 属于**同一类产品**。他和OpenClaw是同一产品：他们的使用形式和功能是类似的。但是Hermes 最出圈的一点是他的自我进化能力，就是他看上去能记事，更聪明。拍脑袋想我们大概也知道Hermes 最常考的内容是啥："和Openclaw的区别，新的实现，为什么能自我进化，记忆模块", 这也是Hermes最核心的卖点和创新点。
 
 Hermes 是什么、总体架构、记忆系统（四层 → 五层）、Agent 架构，以及 Hermes 独有的 **自进化循环** 和 **自动 Skill 沉淀** 两个核心新特性。学完这一章你应该能在面试时说清楚"为什么在同样的模型下 Hermes 跑得更快、越用越懂你"，并把 Hermes 的设计思路搬到自己的 Agent 项目里加分。

@@ -113,7 +113,7 @@ Kimi 团队发布的论文《Attention Residuals》（注意力残差）提出�
 
 这个结构从原始 Transformer 架构至今基本没有变过——Transformer 中每个子层（Multi-Head Attention、Feed Forward）后面的 **"Add & Norm"** 就是残差连接的体现。（以下这个如雷贯耳的Transformer架构图，我们可以看到中间的**Add & Norm 就是残差连接）**
 
-![image.png](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/preview/MEPwbxSp9ojTPkxdovZccEBpnRh)
+![image.png](../assets/feishu/MEPwbxSp9ojTPkxdovZccEBpnRh.png)
 
 ##### 1.2 传统残差连接的两大致命问题
 
@@ -145,7 +145,7 @@ Kimi 团队发布的论文《Attention Residuals》（注意力残差）提出�
 
 （大家理解一下这个旋转90度的概念，其实就是我们把时间上的处理作为横轴，我们引入注意力机制。现在是在网络结构的深度上，我们做手脚，也是引入了类似注意力机制的能力，大家把这个叫做**注意力机制的旋转90度**）
 
-![image.png](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/preview/UhoDbXm8HoLQ9CxHDyzc1Ovynyb)
+![image.png](../assets/feishu/UhoDbXm8HoLQ9CxHDyzc1Ovynyb.png)
 
 ##### 2.2 方法详解
 

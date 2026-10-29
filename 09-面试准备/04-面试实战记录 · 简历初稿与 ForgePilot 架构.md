@@ -23,15 +23,15 @@
 
 **应用版简历：**
 
-![image.png](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/preview/Mnjhbq3zToP7Ksx7BeMc7rj4nsf)
+![image.png](../assets/feishu/Mnjhbq3zToP7Ksx7BeMc7rj4nsf.png)
 
-![image.png](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/preview/G5Atbs9PyovKvaxecnRcNXCWncP)
+![image.png](../assets/feishu/G5Atbs9PyovKvaxecnRcNXCWncP.png)
 
 **应用算法版简历：**
 
-![image.png](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/preview/NyotbJUiNospqfxU7gqcyDxinMb)
+![image.png](../assets/feishu/NyotbJUiNospqfxU7gqcyDxinMb.png)
 
-![image.png](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/preview/LyBBbvBYDojdRuxbxBIc1wcsnVc)
+![image.png](../assets/feishu/LyBBbvBYDojdRuxbxBIc1wcsnVc.png)
 
 ---
 
@@ -79,7 +79,7 @@ ForgePilot 的意义不是重造通用编码工具，而是**复用成熟 Agent 
 > 如果你没有相关基础，你学习来会很吃力。但这其实也告诉我们，包装项目不代表你能绕过基础知识的学习，能把包装内容讲清楚，是建立再我们扎实的理论基础上。
 >
 
-![image.png](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/preview/Ci9ibMGhxo7FKlxfvEfcRcATnKg)
+![image.png](../assets/feishu/Ci9ibMGhxo7FKlxfvEfcRcATnKg.png)
 
 **React + TypeScript 工作台**
 

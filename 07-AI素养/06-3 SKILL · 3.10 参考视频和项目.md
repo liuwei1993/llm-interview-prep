@@ -35,7 +35,7 @@ Skill是一组打包了指令的文件夹：文件夹会包含Skill.md 的核心
 
 从图中我们可以清晰的理解概念所说，一个SKILL就是一个文件夹。其中包含以下内容：
 
-![image.png](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/preview/Co8tbAPsGoOYgwxWhHhc0XyGnNc)
+![image.png](../assets/feishu/Co8tbAPsGoOYgwxWhHhc0XyGnNc.png)
 
 1.SKILL.md：必须，包含了 Yaml头和Body。Yaml是md文件中的头，告诉AI是否加载这个SKILL，AI必定会加载。而body
 
@@ -71,27 +71,27 @@ Skill是一组打包了指令的文件夹：文件夹会包含Skill.md 的核心
 1. 顺序工作流编排： 当有多个步骤，并且需要按照指定的顺序执行时使用。
 核心要点：说明步骤顺序，步骤间的依赖，每一步如何验证，失败时如何回滚。
 
-![image.png](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/preview/NETTbOOKgopPdaxx7hMcJ6fVn0c)
+![image.png](../assets/feishu/NETTbOOKgopPdaxx7hMcJ6fVn0c.png)
 
 2. 多MCP 协作： 任务流包含多个MCP Server时使用。
 核心要点：说明多MCP步骤间如何传递数据，错误异常处理，清晰的步骤界限；
 
-![image.png](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/preview/DUFkbslgNokpD9xShgIcvW8HnGd)
+![image.png](../assets/feishu/DUFkbslgNokpD9xShgIcvW8HnGd.png)
 
 3. 迭代优化： 需要通过多次迭代提升输出质量时：
 核心要点：清晰的质量标准， 迭代提升，验证脚本，知道何时停止迭代。
 
-![image.png](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/preview/AJRybAIt9ofvOuxA1RccJbJhnYd)
+![image.png](../assets/feishu/AJRybAIt9ofvOuxA1RccJbJhnYd.png)
 
 4. 上下文感知工具选择： 当需要根据上下文场景，来动态选择使用不同的工具时使用
 核心要点：清晰的选择策略，兜底选择，选择理由透明
 
-![image.png](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/preview/WBU4bdzfQowaFsxZ6xXcpX2gnHb)
+![image.png](../assets/feishu/WBU4bdzfQowaFsxZ6xXcpX2gnHb.png)
 
 1. 领域专业智能：Skill需要使用特定领域的知识来完成任务时使用。
 关键要点：将专业知识嵌入逻辑，合规性保证，详尽的领域文档，
 
-![image.png](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/preview/ZLphbZSO2oZ8LnxYimKckIqVnzh)
+![image.png](../assets/feishu/ZLphbZSO2oZ8LnxYimKckIqVnzh.png)
 
 ### 3.6 SKILL  vs MCP
 
@@ -115,7 +115,7 @@ Skills 则是将提示词以一种**更加工程化的包装方式打包**，他
 
 总结来说，Skills不是一个更复杂的提示词，而是把复杂的提示词，变成了一个**有结构，可复用，可以自动调用**的模块。
 
-![image.png](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/preview/QkCfbP7PnoDtj7xqvTFcU3cKnDe)
+![image.png](../assets/feishu/QkCfbP7PnoDtj7xqvTFcU3cKnDe.png)
 
 ### 3.8 SKILL的运行模式
 
@@ -129,7 +129,7 @@ Skills 则是将提示词以一种**更加工程化的包装方式打包**，他
 1. **按需加载 Skill 的资源层→ 读范文/材料 → 生成最终回答**
     如果需要使用到资源层，接下来 Claude Code 会执行读资源的动作，把 **references/范文内容**喂给 AI；AI 基于 用户材料 + skill 指令 + references 完成写作并输出 最终回答。
 
-![image.png](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/preview/USNtbJkKroJskmxLZsgcrSE8nwc)
+![image.png](../assets/feishu/USNtbJkKroJskmxLZsgcrSE8nwc.png)
 
 ### 3.9 SKILL的设计理念
 
