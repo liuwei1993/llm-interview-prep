@@ -41,7 +41,7 @@ DeepSeek Harness 真正特殊的地方，不在于“它是不是 Agent”，而
 1. 这里的“插件”不只是给 Agent 增加的几个外部工具。模型适配器、工具系统、文件操作、Shell、沙箱、权限策略、会话持久化、子 Agent、Agent Loop，甚至 Web UI，都可以由插件提供或替换。因此，DeepSeek Harness 不只是允许开发者“给 Agent 加几个工具”，而是允许开发者重新组合 Agent 本身。这也是它最核心的架构特点。
 1. **以 Web UI 为主要交互形式**
 1. 与 Claude Code、Codex 常见的终端交互不同，DeepSeek Harness 当前把 Web UI 作为主要入口。用户可以直接在浏览器里与 Agent 对话、查看完整的执行轨迹并管理工作区，整体使用门槛更低，任务执行过程也更加直观。
-![image.png](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/preview/FkRjbkTVZoZW3CxjCtWcUcYdnQf)
+![image.png](../assets/feishu/FkRjbkTVZoZW3CxjCtWcUcYdnQf.png)
 
 所以，对 DeepSeek Harness 最准确的理解是：**它首先是一个能够直接工作的开源 Agent，同时也是一套高度插件化、可以重新组合的 Agent 运行平台。** 前者说明它和 Claude Code、Codex、OpenClaw 属于同一类产品；后者则是它区别于这些产品的核心特点。
 
@@ -57,7 +57,7 @@ DeepSeek Harness 真正特殊的地方，不在于“它是不是 Agent”，而
 
 我们解析 PI Agent、Claude Code、OpenClaw、Hermes 等开源 Agent 时，通常会先用一张架构图了解系统的整体运行方式。DSH 的宏观结构与它们有相似之处：外部请求进入 Agent 系统，Agent Loop 按照 ReAct 范式反复调用模型和工具，会话系统则保存消息与执行事实。不过，DSH 最鲜明的区别是：这些组件都运行在 Cordis 插件体系中，连 Agent Loop、模型适配器和界面本身也可以由插件提供或替换。
 
-![image.png](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/preview/VwPxb8Br9oQE1XxmjFwc8lvhnZb)
+![image.png](../assets/feishu/VwPxb8Br9oQE1XxmjFwc8lvhnZb.png)
 
 这张图可以分成四部分理解。
 

@@ -50,7 +50,7 @@
 
 针对这个题目，我是设计了如下的架构图。设计要点在后面。框架我们可以复用，框架下面的细节，就是来自于我们的经验了。
 
-![image.png](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/preview/POqWbWvPOoGiBSxedy9cW9pYn6c)
+![image.png](../assets/feishu/POqWbWvPOoGiBSxedy9cW9pYn6c.png)
 
 **关键设计**
 

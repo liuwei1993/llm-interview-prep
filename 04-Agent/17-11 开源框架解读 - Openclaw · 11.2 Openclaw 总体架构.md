@@ -7,6 +7,15 @@
 
 ## 11 开源框架解读  - Openclaw
 
+**📝 2026年10月补充更正｜当前学习建议**
+
+根据目前求职市场的面试反馈，OpenClaw 和 Hermes Agent 的考察已比较少；Claude Code 仍会被问到，Pi-Agent 的热度和考察频率有所上升。DeepSeek Harness 和 Codex 作为近期开放源码的架构，也同样值得关注。
+
+因此，建议优先学习 Claude Code、Pi-Agent、DeepSeek Harness 和 Codex，有余力或感兴趣时，再学习本章节。正文中早期关于“必考”“必须掌握”等表述，请结合当时的撰写时间理解，当前学习优先级以本声明为参考。
+
+下方为早期撰写的原文，保留供学习参考。其中“必考”“必须掌握”等判断反映的是当时的情况，当前学习优先级请以上述更正为准。
+
+
 （写于2026年3月份）OpenClaw一定是一个必考的问题，大模型应用岗位，产品岗，必须得会。原因很简单，我想先和大家讲清楚这里面的底层逻辑，为什么会考。 因为他是目前最热门的AI Agent产品了。在这个大模型高速发展的时代，热门的东西一定是要了解会考察的。 有人说2025年是Agent年，从2025发展到现在，Agent的形式在不断演进。火爆出圈的Agent从去年的Manus到今年的Openclaw, 它是整个行业发展的风向标。 我回想去年（2025年）面试的时候，很多面试官问我Manus是什么，我说不知道，当时觉得没啥，现在觉得很掉分。对于行业爆品，一定要掌握，是高频考点。网上很多视频基本都是讲的Openclaw如何配置，有什么能力。相关视频太多了，在本章我会给大家推荐2个我自己看的部署，玩openclaw的视频，感兴趣可以去玩。 但是本章更侧重的是Openclaw的原理，技术，为什么出圈。讲的人不多，但是作为开发，或者产品，从面试的角度，你无疑是要掌握这个产品里面包含的核心技术的，本节就从功能，技术层面来讲解Openclaw, 相信他一定是你准备面试必不可少的素材。学了本章，你可以在面试的时候和面试官说你看过Openclaw的源码（其实也有必要看，作为Agent开源项目），Manus其实也可以去学习，因为他也是很火的Agent，而且和Openclaw 侧重点是不同的。可以当作课外作业大家自己去学一下。
 
 ### **11.1 OpenClaw是什么**
@@ -31,7 +40,7 @@
 - **Agent 层**负责智能执行 — 推理（Think）、调工具（Act）、记忆（Remember）
 三层的本质是一个**事件驱动的执行管道**：事件产生 → 网关路由 → Agent 消费执行 → 状态持久化 → 等待下一个事件。这是一个永不停止的循环。
 
-![image.png](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/preview/Kz1yblVZ7oKRWSxI94FcCpxannb)
+![image.png](../assets/feishu/Kz1yblVZ7oKRWSxI94FcCpxannb.png)
 
 #### **11.2.1  触发层 - 5层信号源**
 
@@ -39,13 +48,13 @@ Agent 不是只在用户发消息时才工作。OpenClaw 有**五种独立的触
 
 通过上述图片，我们知道它触发的方式很多，我们通常给他发消息其实只是一种（Message）。不过Message可以触发的方式也很多：通过CLI，通过应用（feishu,telegram), 包括Openclaw的dashboard。 所以其实看上去openclaw好像一直在思考，很主动，其实不过是有记忆功能加上 自动的触发源罢了。（最后我会举例说明）
 
-![image.png](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/preview/KJg4bhXUQofIJcxiHxUcH8NvnPc)
+![image.png](../assets/feishu/KJg4bhXUQofIJcxiHxUcH8NvnPc.png)
 
 #### **11.2.2 网关 - 大名鼎鼎的Gateway**
 
 Gateway 是一个**本地长驻 Node.js 进程**，监听端口 `:18789`（HTTP + WebSocket），是触发层和 Agent 层之间的**中间件**。
 
-![image.png](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/preview/MryqbUU3GovKrixP9o6cpjWmndd)
+![image.png](../assets/feishu/MryqbUU3GovKrixP9o6cpjWmndd.png)
 
 **Gateway 的核心职责：连接管理、协议转换、路由分发、安全控制。**
 
@@ -101,4 +110,4 @@ Agents     → Subagents
 
 **再举例：**一个外国小哥哥使用了Openclaw，然后发帖说他给他的妻子用Openclaw设置了定时发送早上好，结果晚上回去，他发现他的龙虾和妻子从早聊到晚，他的妻子完全不知道对面不是真人。他觉得太amazing了。我们现在知道，他看上去主动的原因是，因为你设置了定时器，然后还有间隔触发。Agent每次触发，会根据上下文，思考调用工具比如可以打电话，发新闻，图片。所以整体看上去你没和它主动聊天，他也会和你说话甚至会打电话。无非是这么实现的。
 
-![image.png](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/preview/Zokqb35jfo0Lr7xj6Tjc0x9Anhc)
+![image.png](../assets/feishu/Zokqb35jfo0Lr7xj6Tjc0x9Anhc.png)

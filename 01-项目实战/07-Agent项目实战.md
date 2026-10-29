@@ -37,7 +37,7 @@ https://www.bilibili.com/video/BV16FRbBEEwD/?spm_id_from=333.1387.homepage.video
 
  第四个Agent是用户行为分析Agent，他会根据用户历史预约，分析他的喜好，来的频率，生成回访信息（这块只是大致跑通了）
 
-![image.png](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/preview/FTMibU6JOoZ6rcxl3SPcQ2sTn7o)
+![image.png](../assets/feishu/FTMibU6JOoZ6rcxl3SPcQ2sTn7o.jpg)
 
 2. **集成RAG**。 我当时有这个意识，我希望我的Agent项目有RAG的技术栈。所以这个预约机器人，当用户给出了喜好技师（比如喜欢力气大的），会从维护的技师专场表格中匹配。包括咨询机器人就更是RAG了，它内部有一个专有文档，这个文档记录着按摩房的信息，咨询机器人会从这个文档找知识作为回复。 我当时只是把这一套跑通了，没有用专业数据库，只是跑通了RAG的流程。
 

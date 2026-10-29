@@ -89,7 +89,7 @@ https://zhuanlan.zhihu.com/p/1982756998425632940（辅助资料）
 - 通信开销:R·N + P·M
 **特点：**结合了**集中式的收敛**与**去中心化的灵活**，适合大型复杂任务，但要小心 **Peer 通信税**与**一致性管理**。设计时通常加**通信限流/白名单**，避免消息爆炸。
 
-![image.png](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/preview/X1cybUDrAo8T1Cx98gxcl3bWn4d)
+![image.png](../assets/feishu/X1cybUDrAo8T1Cx98gxcl3bWn4d.png)
 
 ### 6.2 Agent架构设计原则
 
@@ -115,7 +115,7 @@ https://zhuanlan.zhihu.com/p/1982756998425632940（辅助资料）
 
 **2.如果使用多Agent架构，根据特点和场景进行有效选择**
 
-![image.png](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/preview/OEFzbdX92oa3wBxXlQCcmnXFnye)
+![image.png](../assets/feishu/OEFzbdX92oa3wBxXlQCcmnXFnye.png)
 
 ### 6.3 单Agent和多Agent的对比
 
@@ -154,13 +154,13 @@ https://zhuanlan.zhihu.com/p/1982756998425632940（辅助资料）
 - **移交（Handoff）**：一个 Agent 将执行上下文和执行权完整传递给另一个 Agent，自身退出。控制权转移，就像接力跑把棒交出去。
 - **工具调用（Tool Call）**：一个 Agent（主管）将任务委托出去，保留控制权，等结果回来后自己决定下一步，负责最终输出。（ClaudeCode里面的SubAgent的做法）
 - **消息协作**：多个长期驻留 Agent 持续交换消息并协同推进任务，允许横向通信与并行协作。（ClaudeCode里的AgentTeam的做法）
-![image.png](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/preview/Eqclb6LM6o1GBdxKZYGcmCsfnfW)
+![image.png](../assets/feishu/Eqclb6LM6o1GBdxKZYGcmCsfnfW.png)
 
 移交更适用于自主协作的场景，而工具调用则提供了更明确的层级控制和接口约束。
 
 **2.** **消息传递内容：**Agent与Agent之间应该传递所有的消息还是部分消息，需要根据具体的业务场景权衡。
 
-![image.png](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/preview/S6O0bVt66oF65xxAgTAcPHIdngc)
+![image.png](../assets/feishu/S6O0bVt66oF65xxAgTAcPHIdngc.png)
 
 - **共享完整推理数据：**智能体将其所有中间步骤（如链式思考、工具调用）写入共享通道。相当于提供了一个共享区，用于其他智能体理解其推理过程，可以提升系统的整体协作与推理能力。但是这种方式的缺点是会导致状态空间快速膨胀，给上下文窗口和内存管理带来挑战。
 - **仅共享最终结果：**智能体在私有空间内完成其计算，仅将最终结果写入到共享区。它能有效控制状态的复杂度，实现此策略需要为每个智能体定义独立的状态模式。

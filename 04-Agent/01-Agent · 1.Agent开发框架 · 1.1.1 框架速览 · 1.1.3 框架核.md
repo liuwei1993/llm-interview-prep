@@ -69,7 +69,7 @@
 - Stars 是累计值，不能单独反映近期增长速度和当前活跃度。
 因此，下表把 Stars 称为**开源社区关注度**，而不是“框架质量分”或“市场占有率”。对于多仓库项目，统一选择最具代表性的官方主仓库，不对多个语言仓库的 Stars 求和。
 
-![image.png](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/preview/UfTzbj3fuoAhLIxIjmmcaS24n6Y)
+![image.png](../assets/feishu/UfTzbj3fuoAhLIxIjmmcaS24n6Y.png)
 
 按本次统计的代表仓库 Stars 排序，前三名是 **Dify（152.1k）**、**LangChain（143.9k）** 和 **CrewAI（56.9k）**。这说明它们在开源社区中的关注度较高，但由于三者分别属于低代码平台、高层应用框架和多 Agent 框架，不能据此判断谁在技术上更适合某个具体项目。
 
@@ -85,7 +85,7 @@
 
 换句话说，你开发的主要形式是：**配置 Agent + 挂载 Tools + 调用 run()**。这里的“模型决定下一步”只限于一次 Agent 运行循环：模型决定此刻直接回答，还是请求调用某个已注册工具。工具的具体实现、允许调用哪些工具、调用次数、权限以及外层业务流程仍然由代码控制。代表框架：**LangChain、PydanticAI、OpenAI Agents SDK**。
 
-![image.png](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/preview/VOGDbv5I6oIm1axXQD4cnj7Cnjb)
+![image.png](../assets/feishu/VOGDbv5I6oIm1axXQD4cnj7Cnjb.png)
 
 ##### 1.1.2.2 方法二：搭建状态图——定义 State、Node 和 Edge
 
@@ -93,7 +93,7 @@
 
 程序运行时，State 在节点之间不断传递和更新。开发者真正搭建的是一张可循环、可分支的执行图。它的开发形式可以概括为：**定义状态 → 编写节点 → 连接边 → 编译并运行图**。代表框架：**LangGraph**。
 
-![image.png](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/preview/Pm5zbaVBjopdLXxtF79cwjlYnzh)
+![image.png](../assets/feishu/Pm5zbaVBjopdLXxtF79cwjlYnzh.png)
 
 ##### 1.1.2.3 方法三：组织 Agent 团队——定义 Role、Task 和协作关系
 
@@ -101,7 +101,7 @@
 
 这种方法写出来的程序很像在组建项目团队：**定义 Agents → 分配 Tasks → 设置协作方式 → 启动 Crew**。任务在不同角色之间流转，每个 Agent 只处理自己负责的部分。代表框架：**CrewAI、AgentScope**。
 
-![image.png](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/preview/WCocbWcNFoCYoexLJ9dcUuMEnuc)
+![image.png](../assets/feishu/WCocbWcNFoCYoexLJ9dcUuMEnuc.png)
 
 ##### 1.1.2.4 方法四：配置工作环境——给 Agent 任务和可操作的电脑
 
@@ -109,7 +109,7 @@
 
 这种开发方式更像给一位数字员工准备工作台：**描述目标 → 配置环境与工具 → 设置权限 → 让 Agent 持续执行**。代表框架：**Deep Agents、Claude Agent SDK**。
 
-![image.png](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/preview/MmlVbxCaIozZjrx2QgCcbudsnSd)
+![image.png](../assets/feishu/MmlVbxCaIozZjrx2QgCcbudsnSd.png)
 
 ##### 1.1.2.5 方法五：搭建知识管道——定义数据源、索引和查询流程
 
@@ -117,7 +117,7 @@
 
 因此，你主要开发的不是角色或流程图，而是一条数据进入 Agent 的管道：**加载数据 → 切分与索引 → 检索相关内容 → 交给 Agent 回答或行动**。代表框架：**LlamaIndex**。
 
-![image.png](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/preview/FmTGbK0Vcozt22xJxSZc7wpVnJh)
+![image.png](../assets/feishu/FmTGbK0Vcozt22xJxSZc7wpVnJh.png)
 
 ##### 1.1.2.6 方法六：在平台中编排并发布——配置工作流和应用
 
@@ -125,7 +125,7 @@
 
 所以，这一类框架的核心区别不只是“前面写代码，这里拖拽界面”，而是**框架是否把 Agent 的全生命周期一起打包了**：既管怎么搭，也管怎么测、怎么发、怎么监控。它关注的是一个完整应用，而不只是 Agent Loop：**配置 Agent → 编排 Workflow → 调试评估 → 部署应用 → 查看日志**。代表框架：**Dify**。
 
-![image.png](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/preview/NxsUb4ONGokLIDxQfZfccFVCnzd)
+![image.png](../assets/feishu/NxsUb4ONGokLIDxQfZfccFVCnzd.png)
 
 #### 1.1.3 框架核心特点
 
